@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo">BOOKS</h1>
+            <button class="btn-mood"><img src="./img/btn.svg" alt="mood btn" class="mood"></button>
+        </div>
+    </header>
+    <section>
+        <div class="container d-flex my-5 justify-content-center">
+            <div class="btn-group mt-1 w-75 text-center js-sort btngroup">
+                <button type="button" class="btn btn-outline-danger  js-name">Sort by Name</button>
+                <button type="button" class="btn btn-outline-danger  js-year">Sort by Year</button>
+                <button type="button" class="btn btn-outline-danger  js-page">Sort by Page</button>
+                <button type="button" class="btn btn-outline-danger  js-languages">Sort by Languages</button>
+            </div>
+            <form class="d-flex ms-2" role="search">
+                <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </section>
+    <section>
+        <form class="d-flex justify-content-center">
+            <select class="js-A-Z select">
+                <option value="All">All</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+            </select>
+        </form>
+    </section>
+    <section class="row">
+        <div class="col-2"></div>
+        <div class="row col-10 contener">
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./js/books.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
